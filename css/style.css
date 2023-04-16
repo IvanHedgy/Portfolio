@@ -1,0 +1,128 @@
+/* Fonts */
+
+/* font-family: 'Finlandica', sans-serif; */
+
+
+/* Global */
+
+.page-body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+
+.page-header {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+}
+
+.wrapper-header {
+    width: 1340px;
+    margin: 0 auto;
+    padding: 0 10;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 20px;
+
+}
+
+.header-list {
+    list-style: none;
+    font-family: 'Finlandica', sans-serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Promo */
+
+.wrapper-promo {
+    width: 670px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    
+}
+
+.heading-promo {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 32px;
+}
+
+.text-promo {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Footer */
+
+.page-footer {
+    background-color: #C1CAD6;
+    font-family: 'Finlandica', sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.wrapper-footer {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 0 10;
+    display: grid;
+    grid-template-columns: 1fr 200px;    
+    grid-template-rows: 1fr auto;
+    padding-top: 30px;
+}
+
+.footer-nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.footer-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.footer-contact {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.footer-contact-text {
+    line-height: 30px;
+}
+
+.footer-copy {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
