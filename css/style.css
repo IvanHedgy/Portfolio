@@ -23,22 +23,26 @@ img {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1188px;
+    margin: 0 auto;
+    padding: 0 10;
 }
 
 /* Header */
 
 .page-header {
-    background-position: bottom center;
+    /* background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 690px;
+    height: 690px; */
 }
 
-.wrapper-header {
-    width: 1340px;
-    margin: 0 auto;
-    padding: 0 10;
-}
+.wrapper-header {}
 
 .header-nav {
     display: flex;
@@ -48,55 +52,76 @@ ul {
 
 .header-logo {
     font-family: 'Finlandica', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
 
 }
 
 .header-list {
     list-style: none;
     font-family: 'Finlandica', sans-serif;
-    font-size: 17px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #1f312c;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 80px;
 }
 
+.main-bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
 /* Promo */
 
 .wrapper-promo {
-    width: 670px;
-    margin: 0 auto;
     padding: 50px 20px;
-    
+
 }
 
-.heading-promo {
+.promo-title {
     font-family: 'Finlandica', sans-serif;
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #1f312c;
 }
 
-.text-promo {
+.promo-text {
     font-family: 'Finlandica', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    /* font-family: Helvetica; */
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.promo-text-end {
+    font-family: 'Finlandica', sans-serif;
+    /* font-family: Helvetica; */
+    font-size: 30px;
+    font-weight: 400;
+    font-size: 30px
 }
 
 /* Footer */
 
 .page-footer {
-    background-color: #C1CAD6;
+    background-color: #e3e5eb;
     font-family: 'Finlandica', sans-serif;
     font-size: 17px;
     line-height: 21px;
 }
 
 .wrapper-footer {
-    width: 1120px;
-    margin: 0 auto;
-    padding: 0 10;
     display: grid;
-    grid-template-columns: 1fr 200px;    
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     padding-top: 30px;
 }
@@ -107,18 +132,45 @@ ul {
 }
 
 .footer-nav-list {
+    font-family: 'Finlandica', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #1f312c;
     display: flex;
-    align-items: center;
-    gap: 46px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 37px;
 }
 
 .footer-contact {
+
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.footer-contact-text {
-    line-height: 30px;
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.footer-contact-item {
+    align-self: self-end;
+    font-family: 'Finlandica', sans-serif;
+    /* font-family: Helvetica; */
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #1f312c;
+}
+
+.footer-contact-title {
+    font-family: Finlandica;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
 }
 
 .footer-copy {
