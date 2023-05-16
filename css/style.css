@@ -38,7 +38,7 @@ ul {
 .wrapper {
     width: 1168px;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 100px;
 }
 
 
@@ -48,7 +48,7 @@ ul {
 .wrapper-header {}
 
 .header-nav {
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -56,7 +56,7 @@ ul {
 
 .header-logo {
     font-family: 'Finlandica', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     color: #000000;
     align-self: center;
@@ -65,7 +65,7 @@ ul {
 .header-list {
     list-style: none;
     font-family: 'Finlandica', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
     color: #1f312c;
     display: flex;
@@ -74,13 +74,11 @@ ul {
     gap: 80px;
 }
 
-.main-bg {}
-
 .img-bg {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 750px;
+    height: 550px;
 }
 
 /* Promo */
@@ -100,7 +98,7 @@ ul {
 .promo-text {
     font-family: 'Finlandica', sans-serif;
     /* font-family: Helvetica; */
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 400;
 }
 
@@ -138,7 +136,7 @@ ul {
 .portfolio-link:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
- 
+
 .portfolio-link:active {
     background-color: #fff;
     opacity: 0.8;
@@ -171,7 +169,24 @@ ul {
     margin-right: 10px;
 }
 
+.gallery-title {
+    font-family: Finlandica;
+    font-size: 48px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #1f312c;
+    text-align: center;
+}
 
+.gallery-text {
+    font-family: 'Finlandica', sans-serif;
+    /* font-family: Helvetica; */
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #1f312c;
+    text-align: center;
+}
 
 /* Footer */
 
@@ -205,7 +220,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 37px;
+    gap: 20px;
 }
 
 .footer-contact {
@@ -218,7 +233,7 @@ ul {
 .footer-contact-list {
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    gap: 20px;
 }
 
 .footer-contact-item {
@@ -248,16 +263,16 @@ ul {
 
 /* Media tablet */
 
-@media screen and (min-width:1939px) {
+@media screen and (min-width:1450px) {
 
     .img-bg {
-        width: 1920px;
+        width: 1440px;
         margin: 0 auto;
         padding: 0px 10px;
     }
 }
 
-@media screen and (max-width: 1187px) {
+@media screen and (max-width: 1367px) {
 
     .page-body {
         min-width: 480px;
@@ -269,12 +284,18 @@ ul {
         padding: 0px 10px;
     }
 
+    .img-bg {
+        width: 90%;
+        height: 450px;   
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
     .portfolio-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 50px;
     }
-    
 
 }
