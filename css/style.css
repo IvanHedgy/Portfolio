@@ -1,6 +1,7 @@
 /* Fonts */
 
-/* font-family: 'Finlandica', sans-serif; */
+
+/* font-family: 'Finlandica', Arial sans-serif; */
 
 
 /* Global */
@@ -45,17 +46,15 @@ ul {
 /* Header */
 
 
-.wrapper-header {}
-
 .header-nav {
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
 .header-logo {
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 35px;
     font-weight: 500;
     color: #000000;
@@ -64,7 +63,7 @@ ul {
 
 .header-list {
     list-style: none;
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #1f312c;
@@ -85,35 +84,40 @@ ul {
 
 .wrapper-promo {
     padding: 50px 0px;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .promo-title {
-    font-family: 'Finlandica', sans-serif;
-    font-size: 40px;
+    font-family: 'Finlandica', Arial sans-serif;
+    font-size: 35px;
     line-height: 33px;
     font-weight: 500;
     color: #1f312c;
 }
 
-.promo-text {
-    font-family: 'Finlandica', sans-serif;
+.promo-text,
+.cv-list,
+.cv-text {
+    font-family: 'Finlandica', Arial sans-serif;
     /* font-family: Helvetica; */
     font-size: 19px;
     font-weight: 400;
+    color:#1f312c;
 }
 
-.promo-text-end {
-    font-family: 'Finlandica', sans-serif;
+.promo-text-end,
+.cv-title {
+    font-family: 'Finlandica', Arial sans-serif;
     /* font-family: Helvetica; */
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    font-size: 30px
 }
 
 /* Portfolio */
 
 .portfolio-item-title {
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 36px;
     line-height: 33px;
     font-weight: 500;
@@ -156,7 +160,7 @@ ul {
 }
 
 .breadcrumbs {
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 18px;
     line-height: 33px;
     font-weight: 400;
@@ -179,7 +183,7 @@ ul {
 }
 
 .gallery-text {
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     /* font-family: Helvetica; */
     font-size: 21px;
     line-height: 33px;
@@ -188,11 +192,37 @@ ul {
     text-align: center;
 }
 
+
+/* CV */
+
+.cv-main {
+    display: grid;
+    grid-template-columns: min-content, auto;
+    grid-template-rows: min-content, auto;
+    gap: 20px;
+}
+
+.wrapper-author-photo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cv-promo-start {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.cv-promo {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+
 /* Footer */
 
 .page-footer {
     background-color: #e3e5eb;
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 17px;
     line-height: 21px;
 }
@@ -212,7 +242,7 @@ ul {
 }
 
 .footer-nav-list {
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.01em;
@@ -238,7 +268,7 @@ ul {
 
 .footer-contact-item {
     align-self: self-end;
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Finlandica', Arial sans-serif;
     /* font-family: Helvetica; */
     font-size: 21px;
     font-weight: 400;
@@ -247,7 +277,7 @@ ul {
 }
 
 .footer-contact-title {
-    font-family: Finlandica;
+    font-family: 'Finlandica', Arial sans-serif;
     font-size: 24px;
     /* line-height: 1.2; */
     font-weight: 500;
