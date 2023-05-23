@@ -71,13 +71,18 @@ ul {
     justify-content: flex-end;
     align-items: center;
     gap: 80px;
+
 }
 
 .img-bg {
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 450px;
+}
+
+.current {
+    font-weight: 500;
 }
 
 /* Promo */
@@ -199,10 +204,10 @@ ul {
     display: grid;
     grid-template-columns: min-content, auto;
     grid-template-rows: min-content, auto;
-    gap: 20px;
+    gap: 50px;
 }
 
-.wrapper-author-photo {
+.author-photo {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
@@ -210,6 +215,8 @@ ul {
 .cv-promo-start {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    justify-self: start;
+    align-self: center;
 }
 
 .cv-promo {
@@ -262,12 +269,12 @@ ul {
 
 .footer-contact-list {
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
     gap: 20px;
 }
 
 .footer-contact-item {
-    align-self: self-end;
     font-family: 'Finlandica', Arial sans-serif;
     /* font-family: Helvetica; */
     font-size: 21px;
@@ -288,7 +295,7 @@ ul {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     justify-self: center;
-    padding: 15px 0 15px;
+    padding: 5px 0 5px;
 }
 
 /* Media tablet */
@@ -302,7 +309,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1441px) {
 
     .page-body {
         min-width: 480px;
@@ -315,8 +322,8 @@ ul {
     }
 
     .img-bg {
-        width: 90%;
-        height: 450px;   
+        width: 80%;
+        height: 250px;   
         margin: 0 auto;
         padding: 0px 10px;
     }
@@ -327,5 +334,59 @@ ul {
         justify-content: space-around;
         margin-bottom: 50px;
     }
+
+}
+
+/* Media mobile */
+
+@media screen and (max-width: 791px) {
+
+    .page-body {
+        min-width: 320px;
+    }
+
+    .wrapper {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
+    .header-nav {
+        height: 150px;
+        display: grid;   
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .header-list {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .wrapper-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    .footer-contact-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .footer-copy {
+        align-self: center;
+    }
+
+    .footer-nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
 
 }
