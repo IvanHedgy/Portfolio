@@ -212,7 +212,7 @@ ul {
     margin: 20px auto;
 }
 
-.breadcrumbs-item {
+.breadcrumbs li {
     position: relative;
     margin-right: 40px;
 }
