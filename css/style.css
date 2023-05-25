@@ -74,6 +74,41 @@ ul {
 
 }
 
+.header-item {
+	color: #1f312c; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.header-item:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: #1f312c; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.2s; /* Время эффекта */
+}
+
+.header-item:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: #1f312c; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.2s;  /* Время эффекта */
+}
+
+.header-item:active {
+    opacity: 0.7;
+}
+
 .img-bg {
     background-position: center center;
     background-repeat: no-repeat;
@@ -87,7 +122,8 @@ ul {
 
 /* Promo */
 
-.wrapper-promo {
+.wrapper-promo, 
+.wrapper-cv {
     padding: 50px 0px;
     width: 960px;
     margin: 0 auto;
@@ -171,11 +207,34 @@ ul {
     font-weight: 400;
     color: #1f312c;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 20px auto;
 }
 
 .breadcrumbs-item {
-    margin-right: 10px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+
+.breadcrumbs li:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -30px;
+    width: 15px;
+    height: 15px;
+    background-image: url(/img/arrows-icon.png);
+    object-fit: cover;
+    
+}
+
+.breadcrumbs-current:after {
+    display: none;
 }
 
 .gallery-title {
@@ -387,6 +446,15 @@ ul {
         justify-content: space-around;
     }
 
+    .cv-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+    }
 
+    .author-photo {
+        align-self: center;
+    }
 
 }
